@@ -37,8 +37,7 @@ wget "https://sagteam.ru/RDRS/RDRS_v3_folds.tar.gz" -P ./data/
 ```
 2. Extract the data by using the command:
 ```bash
-mkdir ./data/raw
-tar -xzvf ./data/RDRS_v3_folds.tar.gz -C ./data/raw/
+tar -xzvf ./data/RDRS_v3_folds.tar.gz -C ./data/
 ```
 3. (Optional) Remove the archive:
 ```bash
