@@ -1,0 +1,631 @@
+{
+  
+  "text_id": "1925101",
+  
+  "text": "Отзыв: Лечебно-профилактическая паста Сульсена - Лучшее средство, но есть одно НО...\nЯ раньше никогда в своей жизни не сталкивалась с такой проблемой, как перхоть. Но однажды и меня настигла эта участь, сама не знаю откуда оно взялась. Начала чесаться голова, приходилось чаще мыть голову, чтобы зуд проходил, появилась перхоть.  В аптеке мне порекомендовали пасту Сульсена 1%. Сразу после первого применения у меня прошел зуд кожи головы и больше ко мне не возвращался, перхоти стало намного меньше, на второе применение ее не стало совсем. Даже волосы после использования пасты стали более блестящими и красивыми. Но, хочу вас предупредить, всегда тщательно мойте руки после использования. Если это средство попадет в глаза, будет сильное раздражение.",
+  
+  "relations": [
+    {
+      "first_entity": {
+        "spans": [
+          {
+            "begin": 733,
+            "end": 752
+          }
+        ],
+        "xmiID": 168,
+        "text": "сильное раздражение",
+        "MedEntityType": "ADR",
+        "Context": [
+          "1"
+        ],
+        "MedDRA": "Раздражение в месте применения|Кожное раздражение",
+        "tag": [
+          "ADR"
+        ],
+        "entity_id": 21
+      },
+      "second_entity": {
+        "spans": [
+          {
+            "begin": 38,
+            "end": 46
+          }
+        ],
+        "xmiID": 148,
+        "text": "Сульсена",
+        "MedEntityType": "Medication",
+        "MedType": "Drugname",
+        "MedFrom": "Foreign",
+        "Context": [
+          "1"
+        ],
+        "ATC": "D01AE",
+        "tag": [
+          "Medication:MedTypeDrugname",
+          "Medication:MedFromForeign"
+        ],
+        "entity_id": 1
+      },
+      "relation_type": "ADR_Medication:MedTypeDrugname",
+      "relation_class": 1
+    },
+    {
+      "first_entity": {
+        "spans": [
+          {
+            "begin": 733,
+            "end": 752
+          }
+        ],
+        "xmiID": 168,
+        "text": "сильное раздражение",
+        "MedEntityType": "ADR",
+        "Context": [
+          "1"
+        ],
+        "MedDRA": "Раздражение в месте применения|Кожное раздражение",
+        "tag": [
+          "ADR"
+        ],
+        "entity_id": 21
+      },
+      "second_entity": {
+        "spans": [
+          {
+            "begin": 365,
+            "end": 376
+          }
+        ],
+        "xmiID": 158,
+        "text": "Сульсена 1%",
+        "MedEntityType": "Medication",
+        "MedType": "Drugname",
+        "MedFrom": "Foreign",
+        "Context": [
+          "1"
+        ],
+        "ATC": "D01AE",
+        "tag": [
+          "Medication:MedTypeDrugname",
+          "Medication:MedFromForeign"
+        ],
+        "entity_id": 11
+      },
+      "relation_type": "ADR_Medication:MedTypeDrugname",
+      "relation_class": 1
+    },
+    {
+      "first_entity": {
+        "spans": [
+          {
+            "begin": 38,
+            "end": 46
+          }
+        ],
+        "xmiID": 148,
+        "text": "Сульсена",
+        "MedEntityType": "Medication",
+        "MedType": "Drugname",
+        "MedFrom": "Foreign",
+        "Context": [
+          "1"
+        ],
+        "ATC": "D01AE",
+        "tag": [
+          "Medication:MedTypeDrugname",
+          "Medication:MedFromForeign"
+        ],
+        "entity_id": 1
+      },
+      "second_entity": {
+        "spans": [
+          {
+            "begin": 330,
+            "end": 358
+          }
+        ],
+        "xmiID": 156,
+        "text": "В аптеке мне порекомендовали",
+        "MedEntityType": "Medication",
+        "MedType": "SourceInfodrug",
+        "Context": [
+          "1"
+        ],
+        "source_group": "фармацевт",
+        "tag": [
+          "Medication:MedTypeSourceInfodrug"
+        ],
+        "entity_id": 9
+      },
+      "relation_type": "Medication:MedTypeDrugname_Medication:MedTypeSourceInfodrug",
+      "relation_class": 1
+    },
+    {
+      "first_entity": {
+        "spans": [
+          {
+            "begin": 365,
+            "end": 376
+          }
+        ],
+        "xmiID": 158,
+        "text": "Сульсена 1%",
+        "MedEntityType": "Medication",
+        "MedType": "Drugname",
+        "MedFrom": "Foreign",
+        "Context": [
+          "1"
+        ],
+        "ATC": "D01AE",
+        "tag": [
+          "Medication:MedTypeDrugname",
+          "Medication:MedFromForeign"
+        ],
+        "entity_id": 11
+      },
+      "second_entity": {
+        "spans": [
+          {
+            "begin": 330,
+            "end": 358
+          }
+        ],
+        "xmiID": 156,
+        "text": "В аптеке мне порекомендовали",
+        "MedEntityType": "Medication",
+        "MedType": "SourceInfodrug",
+        "Context": [
+          "1"
+        ],
+        "source_group": "фармацевт",
+        "tag": [
+          "Medication:MedTypeSourceInfodrug"
+        ],
+        "entity_id": 9
+      },
+      "relation_type": "Medication:MedTypeDrugname_Medication:MedTypeSourceInfodrug",
+      "relation_class": 1
+    }
+  ],
+  
+  "entities": {
+    "0": {
+      "spans": [
+        {
+          "begin": 32,
+          "end": 37
+        }
+      ],
+      "xmiID": 147,
+      "text": "паста",
+      "MedEntityType": "Medication",
+      "MedType": "Drugform",
+      "Context": [
+        "1"
+      ],
+      "medform_standart": "Паста",
+      "tag": [
+        "Medication:MedTypeDrugform"
+      ],
+      "entity_id": 0
+    },
+    "1": {
+      "spans": [
+        {
+          "begin": 38,
+          "end": 46
+        }
+      ],
+      "xmiID": 148,
+      "text": "Сульсена",
+      "MedEntityType": "Medication",
+      "MedType": "Drugname",
+      "MedFrom": "Foreign",
+      "Context": [
+        "1"
+      ],
+      "ATC": "D01AE",
+      "tag": [
+        "Medication:MedTypeDrugname",
+        "Medication:MedFromForeign"
+      ],
+      "entity_id": 1
+    },
+    "2": {
+      "spans": [
+        {
+          "begin": 38,
+          "end": 46
+        }
+      ],
+      "xmiID": 149,
+      "text": "Сульсена",
+      "MedEntityType": "Medication",
+      "MedType": "DrugBrand",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Medication:MedTypeDrugBrand"
+      ],
+      "entity_id": 2
+    },
+    "3": {
+      "spans": [
+        {
+          "begin": 49,
+          "end": 64
+        }
+      ],
+      "xmiID": 150,
+      "text": "Лучшее средство",
+      "MedEntityType": "Disease",
+      "DisType": "BNE-Pos",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Disease:DisTypeBNE-Pos"
+      ],
+      "entity_id": 3
+    },
+    "4": {
+      "spans": [
+        {
+          "begin": 66,
+          "end": 81
+        }
+      ],
+      "xmiID": 151,
+      "text": "но есть одно НО",
+      "MedEntityType": "Note",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Note"
+      ],
+      "entity_id": 4
+    },
+    "5": {
+      "spans": [
+        {
+          "begin": 155,
+          "end": 162
+        }
+      ],
+      "xmiID": 152,
+      "text": "перхоть",
+      "MedEntityType": "Disease",
+      "DisType": "Indication",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Перхоть",
+      "tag": [
+        "Disease:DisTypeIndication"
+      ],
+      "entity_id": 5
+    },
+    "6": {
+      "spans": [
+        {
+          "begin": 243,
+          "end": 258
+        }
+      ],
+      "xmiID": 153,
+      "text": "чесаться голова",
+      "MedEntityType": "Disease",
+      "DisType": "Indication",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Зуд",
+      "tag": [
+        "Disease:DisTypeIndication"
+      ],
+      "entity_id": 6
+    },
+    "7": {
+      "spans": [
+        {
+          "begin": 296,
+          "end": 299
+        }
+      ],
+      "xmiID": 154,
+      "text": "зуд",
+      "MedEntityType": "Disease",
+      "DisType": "Indication",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Зуд",
+      "tag": [
+        "Disease:DisTypeIndication"
+      ],
+      "entity_id": 7
+    },
+    "8": {
+      "spans": [
+        {
+          "begin": 320,
+          "end": 327
+        }
+      ],
+      "xmiID": 155,
+      "text": "перхоть",
+      "MedEntityType": "Disease",
+      "DisType": "Indication",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Перхоть",
+      "tag": [
+        "Disease:DisTypeIndication"
+      ],
+      "entity_id": 8
+    },
+    "9": {
+      "spans": [
+        {
+          "begin": 330,
+          "end": 358
+        }
+      ],
+      "xmiID": 156,
+      "text": "В аптеке мне порекомендовали",
+      "MedEntityType": "Medication",
+      "MedType": "SourceInfodrug",
+      "Context": [
+        "1"
+      ],
+      "source_group": "фармацевт",
+      "tag": [
+        "Medication:MedTypeSourceInfodrug"
+      ],
+      "entity_id": 9
+    },
+    "10": {
+      "spans": [
+        {
+          "begin": 359,
+          "end": 364
+        }
+      ],
+      "xmiID": 157,
+      "text": "пасту",
+      "MedEntityType": "Medication",
+      "MedType": "Drugform",
+      "Context": [
+        "1"
+      ],
+      "medform_standart": "Паста",
+      "tag": [
+        "Medication:MedTypeDrugform"
+      ],
+      "entity_id": 10
+    },
+    "11": {
+      "spans": [
+        {
+          "begin": 365,
+          "end": 376
+        }
+      ],
+      "xmiID": 158,
+      "text": "Сульсена 1%",
+      "MedEntityType": "Medication",
+      "MedType": "Drugname",
+      "MedFrom": "Foreign",
+      "Context": [
+        "1"
+      ],
+      "ATC": "D01AE",
+      "tag": [
+        "Medication:MedTypeDrugname",
+        "Medication:MedFromForeign"
+      ],
+      "entity_id": 11
+    },
+    "12": {
+      "spans": [
+        {
+          "begin": 365,
+          "end": 376
+        }
+      ],
+      "xmiID": 159,
+      "text": "Сульсена 1%",
+      "MedEntityType": "Medication",
+      "MedType": "DrugBrand",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Medication:MedTypeDrugBrand"
+      ],
+      "entity_id": 12
+    },
+    "13": {
+      "spans": [
+        {
+          "begin": 416,
+          "end": 469
+        }
+      ],
+      "xmiID": 160,
+      "text": "прошел зуд кожи головы и больше ко мне не возвращался",
+      "MedEntityType": "Disease",
+      "DisType": "BNE-Pos",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Disease:DisTypeBNE-Pos"
+      ],
+      "entity_id": 13
+    },
+    "14": {
+      "spans": [
+        {
+          "begin": 423,
+          "end": 438
+        }
+      ],
+      "xmiID": 161,
+      "text": "зуд кожи головы",
+      "MedEntityType": "Disease",
+      "DisType": "Indication",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Зуд",
+      "tag": [
+        "Disease:DisTypeIndication"
+      ],
+      "entity_id": 14
+    },
+    "15": {
+      "spans": [
+        {
+          "begin": 471,
+          "end": 478
+        }
+      ],
+      "xmiID": 163,
+      "text": "перхоти",
+      "MedEntityType": "Disease",
+      "DisType": "Indication",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Перхоть",
+      "tag": [
+        "Disease:DisTypeIndication"
+      ],
+      "entity_id": 15
+    },
+    "16": {
+      "spans": [
+        {
+          "begin": 471,
+          "end": 540
+        }
+      ],
+      "xmiID": 162,
+      "text": "перхоти стало намного меньше, на второе применение ее не стало совсем",
+      "MedEntityType": "Disease",
+      "DisType": "BNE-Pos",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Disease:DisTypeBNE-Pos"
+      ],
+      "entity_id": 16
+    },
+    "17": {
+      "spans": [
+        {
+          "begin": 542,
+          "end": 614
+        }
+      ],
+      "xmiID": 164,
+      "text": "Даже волосы после использования пасты стали более блестящими и красивыми",
+      "MedEntityType": "Disease",
+      "DisType": "BNE-Pos",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Disease:DisTypeBNE-Pos"
+      ],
+      "entity_id": 17
+    },
+    "18": {
+      "spans": [
+        {
+          "begin": 574,
+          "end": 579
+        }
+      ],
+      "xmiID": 165,
+      "text": "пасты",
+      "MedEntityType": "Medication",
+      "MedType": "Drugform",
+      "Context": [
+        "1"
+      ],
+      "medform_standart": "Паста",
+      "tag": [
+        "Medication:MedTypeDrugform"
+      ],
+      "entity_id": 18
+    },
+    "19": {
+      "spans": [
+        {
+          "begin": 643,
+          "end": 690
+        }
+      ],
+      "xmiID": 166,
+      "text": "всегда тщательно мойте руки после использования",
+      "MedEntityType": "Note",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Note"
+      ],
+      "entity_id": 19
+    },
+    "20": {
+      "spans": [
+        {
+          "begin": 692,
+          "end": 752
+        }
+      ],
+      "xmiID": 167,
+      "text": "Если это средство попадет в глаза, будет сильное раздражение",
+      "MedEntityType": "Note",
+      "Context": [
+        "1"
+      ],
+      "tag": [
+        "Note"
+      ],
+      "entity_id": 20
+    },
+    "21": {
+      "spans": [
+        {
+          "begin": 733,
+          "end": 752
+        }
+      ],
+      "xmiID": 168,
+      "text": "сильное раздражение",
+      "MedEntityType": "ADR",
+      "Context": [
+        "1"
+      ],
+      "MedDRA": "Раздражение в месте применения|Кожное раздражение",
+      "tag": [
+        "ADR"
+      ],
+      "entity_id": 21
+    }
+  },
+  
+  "coreference": {
+    "mentions": [],
+    "clusters": []
+  }
+
+}
