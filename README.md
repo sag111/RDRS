@@ -44,7 +44,7 @@ tar -xzvf ./data/RDRS_v3_folds.tar.gz -C ./data/
 rm -f ./data/RDRS_v3_folds.tar.gz
 ```
 
-After that you can find the data at "./RDRS/data/raw/" directory.
+After that you can find the data at "./RDRS/data/" directory.
 
 Data description
 ---
