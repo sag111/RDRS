@@ -1,23 +1,6 @@
 Dataset Summary
 ---
 This repository provides the RDRS dataset.
-```
-Task:                 Text Classification
-
-Sub-tasks:            pharmacological Named Entity Recognition (NER); 
-                      Relation Extraction (RE); 
-                      Coreference Extraction;
-                      Text Normalization
-
-Size Categories:      3821 documents; 
-                      83910 named entities; 
-                      55717 relations
-
-Languages:            Russian, monolingual
-Language Creators:    Russian
-
-Annotations Creators: experts
-```
 | Task | Sub-tasks | Size Categories | Languages | Language Creators | Annotations Creators |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Text Classification | - pharmacological Named<br/>Entity Recognition (NER);<br/>- Relation Extraction (RE);<br/>- Coreference Extraction;<br/>- Text Normalization | 3821 docs;<br/> 83910 entities;<br/> 55717 relations | Russian,<br/>monolingual | Russian | experts |
@@ -43,6 +26,7 @@ We've prepared a bash script to help you get started with the dataset.
 
 To download the dataset you need to go to the repository directory ("./RDRS/") and run at cmd:
 ```bash
+mkdir ./data
 . get_data.sh
 ```
 
@@ -53,15 +37,15 @@ wget "https://sagteam.ru/RDRS/RDRS_v3_folds.tar.gz" -P ./data/
 ```
 2. Extract the data by using the command:
 ```bash
-tar -xzvf ./data/RDRS_v3_folds.tar.gz -C ./data/
+mkdir ./data/raw
+tar -xzvf ./data/RDRS_v3_folds.tar.gz -C ./data/raw/
 ```
 3. (Optional) Remove the archive:
 ```bash
 rm -f ./data/RDRS_v3_folds.tar.gz
 ```
 
-
-After that you can find the data at "./RDRS/data/" directory.
+After that you can find the data at "./RDRS/data/raw/" directory.
 
 Data description
 ---
@@ -75,80 +59,9 @@ comming soon
 
 Data Format
 ---
-An example for a document from the dataset is shown below:
-```
-{
-	'text_id': '1083265',
-	
-	'text': 'http://otzovik.com/review_1083265.html\nTITLE\nОтзыв: Энцефабол - не помог\nTEXT\nКогда нервопатолог выписал нам данный препарат, то сказал что после него все начинают говорить. Пропили мы его 2 мес. Не помог Общее впечатление : не помог\nRATING\n1\nNOTE\n',
-	
-	'relations': [
-		{
-			'first_entity': {
-				'spans': [{'begin': 52, 'end': 61}],
-				'xmiID': 10,
-				'text': 'Энцефабол',
-			    'MedEntityType': 'Medication',
-			    'MedType': 'Drugname',
-			    'MedFrom': 'Foreign',
-			    'Context': ['1'],
-			    'ATC': 'N06BX02',
-			    'tag': ['Medication:MedTypeDrugname', 'Medication:MedFromForeign'],
-			    'entity_id': 0
-			},
-			
-			'second_entity': {
-				'spans': [{'begin': 84, 'end': 104}],
-			    'xmiID': 12,
-			    'text': 'нервопатолог выписал',
-			    'MedEntityType': 'Medication',
-			    'MedType': 'SourceInfodrug',
-			    'Context': ['1'],
-			    'source_group': 'врач назначил',
-			    'tag': ['Medication:MedTypeSourceInfodrug'],
-			    'entity_id': 2
-			},
-		
-			'relation_type': 'Medication:MedTypeDrugname_Medication:MedTypeSourceInfodrug',
-			
-			'relation_class': 1
-		}
-	],
- 	
- 	'entities': {
- 		'0': {
- 			'spans': [{'begin': 52, 'end': 61}],
-	 		'xmiID': 10,
-	 		'text': 'Энцефабол',
-	 		'MedEntityType': 'Medication',
-	 		'MedType': 'Drugname',
-	    	'MedFrom': 'Foreign',
-	    	'Context': ['1'],
-	    	'ATC': 'N06BX02',
-	    	'tag': ['Medication:MedTypeDrugname', 'Medication:MedFromForeign'],
-	    	'entity_id': 0
-	    },
-  		
-  		'1': {
-  			...
-  		},
-  		...
-  	}
-	
-	'coreference': {
-		'mentions': [
-			{'startPos': 84, 'endPos': 96},
-			{'startPos': 105, 'endPos': 108},
-			{'startPos': 109, 'endPos': 124},
-			{'startPos': 146, 'endPos': 150},
-    		{'startPos': 182, 'endPos': 184},
-		    {'startPos': 185, 'endPos': 188}
-		],
-   		
-   		'clusters': [[0, 3], [1, 4], [2, 5]]
-   	},
-}
-```
+The data is presented in json format as a list of documents, where each document is a dictionary with keys: "text_id", "text", "relations", "coreference". For a detailed description of these keys and nested dictionary items, see below in the [Data Fields section](#data-fields).
+
+An example of a document from the dataset is shown in file: ["sample_doc.json"](./assets/sample_doc.json).
 
 Data Fields
 ---
