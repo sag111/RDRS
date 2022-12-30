@@ -46,67 +46,8 @@ rm -f ./data/RDRS_v3_folds.tar.gz
 
 After that you can find the data at "./RDRS/data/" directory.
 
-Data description
----
-comming soon
-
-
-Statistics
----
-comming soon
-
-
 Data Format
 ---
 The data is presented in json format as a list of documents, where each document is a dictionary with keys: "text_id", "text", "relations", "coreference". For a detailed description of these keys and nested dictionary items, see below in the [Data Fields section](#data-fields).
 
 An example of a document from the dataset is shown in file: ["sample_doc.json"](./assets/sample_doc.json).
-
-Data Fields
----
-comming soon
-
-- "text_id" -- 
-- "text" -- 
-- "relations" -- 
-	- "first_entity"
-	- "second_entity"
-		- 'spans'
-			- begin
-			- end
-		- 'xmiID'
-		- 'text'
-		- 'MedEntityType'
-		- 'MedType'
-		- 'MedFrom'
-		- 'Context'
-		- 'ATC'
-		- 'tag'
-		- 'entity_id'
-- "coreference" -- 
-	- startPos
-	- endPos
-
-Dataset Creation
----
-comming soon
-
-Annotation procedure
----
-comming soon
-
-Supported Tasks
----
-comming soon
-
-Disclaimer
----
-comming soon
-
-Citing & Authors
----
-comming soon
-
-Acknowledgements
----
-comming soon
