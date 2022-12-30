@@ -33,6 +33,7 @@ mkdir ./data
 Alternatively, you can follow the steps:
 1. Download the data archive [at link](https://sagteam.ru/RDRS/RDRS_v3_folds.tar.gz):
 ```bash
+mkdir ./data
 wget "https://sagteam.ru/RDRS/RDRS_v3_folds.tar.gz" -P ./data/
 ```
 2. Extract the data by using the command:
